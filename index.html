@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>H+ Sport</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="mt-3">
+    <!-- Header -->
+    <header class="border-bottom pb-3">
+        <nav class="container navbar navbar-expand-lg navbar-light">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#"><img src="assets/image/h-horizontal-logo.png" alt="Logo"></a>
+
+            <!-- Button Toggle -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"
+                aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Main Menu -->
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Company
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">People</a>
+                            <a class="dropdown-item" href="#">History</a>
+                            <a class="dropdown-item" href="#">Philosophy</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">H+ ACTIVE apparel</a>
+                            <a class="dropdown-item" href="#">H+ POWER supplements</a>
+                            <a class="dropdown-item" href="#">H+ SPORT mineral water</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul><!-- /navbar-nav -->
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div><!-- /navbar-collapse -->
+        </nav><!-- /container -->
+    </header>
+
+    <section>
+        <form id="cart-hplus">
+
+            <!-- Products -->
+            <div id="products" class="container border-bottom">
+                <div class="row">
+                    <div class="col-md-6 my-5">
+                        <h2>H+ Basketball Sneakers</h2>
+                        <span class="text-muted mb-3">Run faster, jump higher.</span>
+                        <p>Price: &#36;90/pair</p>
+                        <div class="row">
+                            <label class="col-4">Quantity desired:</label>
+                            <input type="number" id="txt-q-bball" placeholder="0" min="0" class="col-2">
+                        </div>
+                    </div><!-- /col -->
+
+                    <div class="col-md-6 my-5">
+                        <h2>H+ Active Jersey</h2>
+                        <span class="text-muted mb-3">Sweat harder, wick better</span>
+                        <p>Price: &#36;25/each</p>
+                        <div class="row">
+                            <label class="col-4">Quantity desired:</label>
+                            <input type="number" id="txt-q-jersey" placeholder="0" min="0" class="col-2">
+                        </div>
+                    </div><!-- /col -->
+
+                    <div class="col-md-6 my-5">
+                        <h2>H+ Power Supplements</h2>
+                        <span class="text-muted mb-3">Get healthier, get smarter.</span>
+                        <p>Price: &#36;30/bottle</p>
+                        <div class="row">
+                            <label class="col-4">Quantity desired:</label>
+                            <input type="number" id="txt-q-power" placeholder="0" min="0" class="col-2">
+                        </div>
+                    </div><!-- /col -->
+
+                    <div class="col-md-6 my-5">
+                        <h2>H+ Mineral Water</h2>
+                        <span class="text-muted mb-3">It's fizzy!</span>
+                        <p>Price: &#36;4/bottle</p>
+                        <div class="row">
+                            <label class="col-4">Quantity desired:</label>
+                            <input type="number" id="txt-q-water" placeholder="0" min="0" class="col-2">
+                        </div>
+                    </div><!-- /col -->
+                </div><!-- /row -->
+            </div><!-- /container -->
+
+            <!-- Order -->
+            <div id="order" class="container mt-5 pb-3">
+                <h2>Estimate Order</h2>
+                <div class="row">
+                    <div class="col-md-4 my-5">
+                        <h5>State (required)</h5>
+                        <select id="s-state" required>
+                            <option value="">- select -</option>
+                            <option value="CA">California (7.5% tax)</option>
+                            <option value="SA">Seattle (6.5% tax)</option>
+                            <option value="IL">Illinois</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="PA">Pennsylvania</option>
+                        </select>
+                    </div><!-- /col-md-4 -->
+
+                    <div class="col-md-4 my-5">
+                        <h5>Shipping and Handling:</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" id="r-method-pickup" type="radio" value="pickup" name="r_method" checked>
+                            <label class="form-check-label">Pickup (free)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" id="r-method-usps" type="radio" value="usps" name="r_method">
+                            <label class="form-check-label">US Mail ($2/item)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" id="r-method-ups" type="radio" value="ups" name="r_method">
+                            <label class="form-check-label">UPS ($3/item)</label>
+                        </div>
+                    </div><!-- /col-md-4 -->
+
+                    <div class="col-md-4 my-5">
+                        <h5>Special</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" id="c-special-gift" type="checkbox" value="YES">
+                            <label class="form-check-label">This is a gift (include a card)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" id="c-special-email" type="checkbox" value="YES">
+                            <label class="form-check-label">Sign up for the H+ mailing list</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" id="c-special-recipes" type="checkbox" value="YES">
+                            <label class="form-check-label">Include H+ recipes (free!)</label>
+                        </div>
+                    </div><!-- /col-md-4 -->
+                </div><!-- /row -->
+
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 my-5">
+                        <h5>Other notes</h5>
+                        <textarea id="txt-notes" placeholder=" Any other comments (does not affect estimate)" cols="55"
+                            rows="3"></textarea>
+                    </div><!-- /col-md-8 -->
+
+                    <div class="col-md-4 col-sm-12 my-5">
+                        <h5>Click to estimate:</h5>
+                        <button class="btn btn-dark disabled" type="submit" value="Estimate Total" id="btn-estimate">
+                            Estimate Total
+                        </button>
+                        <input type="text" id="txt-estimate" placeholder="$0.00" value="">
+
+                        <div id="results" class="mt-2"></div>
+                    </div>
+                </div><!-- /row -->
+            </div><!-- /container -->
+
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 my-5">
+                    <p class="text-justify">H+ Sport is a fictitious brand created by lynda.com solely for the purpose
+                        of training. All
+                        products and people associated with H+ Sport are also fictitious. Any resemblance to real
+                        brands, products, or people is purely coincidental. Information provided about the product is
+                        also fictitious and should not be construed to be representative of actual products on the
+                        market in a similar product category.</p>
+                </div><!-- /col-md-4 -->
+
+                <div class="col-md-4 my-5">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="740" height="416" src="https://www.youtube.com/embed/LKafSYIwUfM?feature=oembed"
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+
+                </div><!-- /col-md-4 -->
+
+                <div class="col-md-4 my-5">
+                    <span style="font-size: 3em;">
+                        <i class="fab fa-facebook-square"></i>
+                    </span>
+                    <span style="font-size: 3em;">
+                        <i class="fab fa-twitter-square"></i>
+                    </span>
+                    <span style="font-size: 3em;">
+                        <i class="fab fa-instagram"></i>
+                    </span>
+                    <span style="font-size: 3em;">
+                        <i class="fab fa-pinterest-square"></i>
+                    </span>
+                </div><!-- /col-md-4 -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </footer>
+
+    <!-- JS Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Personal JS -->
+    <script src="script.js"></script>
+</body>
+
+
+</html>

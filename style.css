@@ -1,0 +1,41 @@
+/*************** TYPOGRAPHY ***************/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav div ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+header nav div ul > .active a {
+    color: #c0af00 !important;
+}
+
+/*************** HEADER ***************/
+header nav .navbar-brand img {
+    height: 100px;
+    width: auto;
+}
+
+header nav div ul li a:hover {
+    color: white !important;
+    background-color: #c0af00;
+    border-radius: 5px;
+}
+
+header nav div ul > .dropdown .dropdown-menu {
+    background-color: black;
+}
+
+header nav div ul > .dropdown .dropdown-menu a {
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/*************** ORDER ***************/
+section form #order div div .btn-dark:hover, .btn-dark:active, .btn-dark:focus {
+    background-color: #c0af00;
+}
